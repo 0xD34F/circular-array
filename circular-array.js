@@ -6,7 +6,7 @@
     }
 }(function() {
     function isIndex(value) {
-        return (value | 0) === parseInt(value);
+        return (+value) === parseInt(value, 10);
     }
 
     function transformPropName(target, prop) {
